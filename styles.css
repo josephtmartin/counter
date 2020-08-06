@@ -1,3 +1,45 @@
+
+* {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: #DAA588;
+}
+
 body {
-    background-color: yellow;
+    background: #28262C;
+}
+
+.counter--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.counter--card {
+    text-align: center;
+    border: 5px solid #DAA588;
+    width: 30%;
+    height: 50%;
+}
+
+.counter--header {
+    font-size: 70px;
+    text-decoration: underline;
+    margin: 0;
+}
+
+.counter--value {
+    font-size: 100px;
+    margin-top: 0px;
+}
+
+.counter--buttons {
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.counter--buttons button {
+    background: none;
 }
