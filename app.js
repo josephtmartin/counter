@@ -3,8 +3,8 @@
 let counters = [
   {
     counterValue: 0,
-    playerName: 'player'
-  }
+    playerName: 'player',
+  },
 ];
 
 const buildCounter = () => {
@@ -85,32 +85,42 @@ const addCounter = () => {
 };
 
 const changeName = (e) => {
-    const target = e.target.id;
-    for (let i = 0; i < counters.length; i++){
-        if (target === `player-${i}`){
-            const name = document.querySelector(`#name-input-${i}`).value;
-            counters[i].playerName = name;
-        }
+  const target = e.target.id;
+  for (let i = 0; i < counters.length; i++) {
+    if (target === `player-${i}`) {
+      const name = document.querySelector(`#name-input-${i}`).value;
+      counters[i].playerName = name;
     }
-    init();
+  }
+  init();
 };
 
 const removePlayer = (e) => {
-    const ctype = e.target.type;
-    const target = e.target.id;
-    if (ctype === 'button'){
-        counters.splice(target, 1);
-        init();
-    }
-}
+  const ctype = e.target.type;
+  const target = e.target.id;
+  if (ctype === 'button') {
+    counters.splice(target, 1);
+    init();
+  }
+};
 
 const buttonEvent = () => {
   for (let i = 0; i < counters.length; i++) {
-    document.querySelector(`#decrease-${i}`).addEventListener('click', decreaseCounter);
-    document.querySelector(`#increase-${i}`).addEventListener('click', increaseCounter);
-    document.querySelector(`#reset-${i}`).addEventListener('click', resetCounter);
-    document.querySelector(`#player-${i}`).addEventListener('click', changeName);
-    document.querySelector(`#remove-${i}`).addEventListener('click', removePlayer);
+    document
+      .querySelector(`#decrease-${i}`)
+      .addEventListener('click', decreaseCounter);
+    document
+      .querySelector(`#increase-${i}`)
+      .addEventListener('click', increaseCounter);
+    document
+      .querySelector(`#reset-${i}`)
+      .addEventListener('click', resetCounter);
+    document
+      .querySelector(`#player-${i}`)
+      .addEventListener('click', changeName);
+    document
+      .querySelector(`#remove-${i}`)
+      .addEventListener('click', removePlayer);
   }
   document.querySelector('#addCounter').addEventListener('click', addCounter);
 };
