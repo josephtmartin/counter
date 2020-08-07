@@ -1,6 +1,6 @@
 # The Counterinator 
 
-This is an app that you can use to keep score in family night games like:
+This is an app that you can use to keep score in family game night games like:
 
 * Pictionary
 * Charades
