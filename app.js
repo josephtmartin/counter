@@ -3,14 +3,14 @@
 let counters = [
   {
     counterValue: 0,
-    playerName: 'player',
-  },
+    playerName: 'player'
+  }
 ];
 
 const buildCounter = () => {
   let domString = '';
   for (let i = 0; i < counters.length; i++) {
-    domString = `<div class="counter--card">
+    domString += `<div class="counter--card">
                         <h3 class="counter--header">${counters[i].playerName}</h3>
                         <div class="counter--value value--${i}">${counters[i].counterValue}</div>
                         <div class="counter--buttons">
