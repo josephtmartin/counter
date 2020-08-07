@@ -13,7 +13,7 @@ This is an app that you can use to keep score in family game night games like:
 
 ### Demo
 
-![Counterinator Demo]()
+![Counterinator Demo](demo/counterinator.gif)
 
 [Counterinator](https://counterinator.netlify.app/)
 
