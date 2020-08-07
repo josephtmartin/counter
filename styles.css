@@ -1,50 +1,55 @@
-
 * {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    color: #DAA588;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  color: #daa588;
 }
 
 body {
-    background: #28262C;
+  background: #28262c;
 }
 
 .counter--container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
 }
 
 .counter--card {
-    text-align: center;
-    border: 5px solid #DAA588;
-    width: 30%;
-    height: 50%;
+  text-align: center;
+  border: 5px solid #daa588;
+  width: 30%;
+  height: 50%;
 }
 
 .counter--header {
-    font-size: 70px;
-    text-decoration: underline;
-    margin: 0;
+  font-size: 70px;
+  text-decoration: underline;
+  margin: 0;
 }
 
 .counter--value {
-    font-size: 100px;
-    margin-top: 0px;
+  font-size: 100px;
+  margin-top: 0px;
 }
 
 .counter--buttons {
-    margin: 20px;
-    display: flex;
-    justify-content: space-around;
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .counter--buttons button {
-    background: none;
+  background: none;
 }
 
 .main-button--container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 426px) {
+  .counter--card {
+    width: 100%;
+  }
 }
