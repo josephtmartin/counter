@@ -43,3 +43,8 @@ body {
 .counter--buttons button {
     background: none;
 }
+
+.main-button--container {
+    display: flex;
+    justify-content: center;
+}
